@@ -28,6 +28,9 @@ public class DatePage extends LandingPage {
     @AndroidFindBy(id = "android:id/button1")
     public WebElement okButton;
 
+    @AndroidFindBy(accessibility = "Navigate Up")
+    public WebElement turnLandingPage;
+
     public void selectDayWithScrollAndVerify(String monthText, String dayText) {
 
 //        List<WebElement> listOfDays = listOfDaysElement;
