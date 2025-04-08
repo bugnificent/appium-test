@@ -1,0 +1,6 @@
+{
+    "platformName": "Android",
+    "appium:deviceName": "emulator-5554",
+    "appium:automationName": "UiAutomator2",
+    "appium:app": "C:/Path/ToYourProject/AndroidStudioProjects/appium/app/build/outputs/apk/debug/TheApp.apk"
+  }
