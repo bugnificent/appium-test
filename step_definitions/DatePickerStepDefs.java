@@ -7,7 +7,7 @@ import static com.velespit.utilities.BrowserUtils.*;
 
 public class DatePickerStepDefs extends DatePage {
 
-    private final String month = "January";
+    private final String month = "September";
 
     @Test
     public void datePickTest() {
@@ -17,13 +17,13 @@ public class DatePickerStepDefs extends DatePage {
 
             waitForVisibilityAndClick(monthButton, 10);
 
-            waitForVisibilityOfListElement(listOfMonthElement, 10);
+            refreshAndWaitForVisibilityOfListElement(listOfMonthElement, 10);
 
             selectMonth(month);
 
             waitForVisibilityAndClick(dayButton, 10);
 
-            waitForVisibilityOfListElement(listOfDaysElement, 10);
+            refreshAndWaitForVisibilityOfListElement(listOfDaysElement, 10);
 
             selectDayWithScrollAndVerify(month, "20");
 
