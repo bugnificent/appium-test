@@ -1,5 +1,4 @@
-# appium-test
+# Appium Test on TheApp v1.12.0
 
-
-https://github.com/user-attachments/assets/5b270da6-066f-414b-a271-a026b5c517e5
+https://github.com/user-attachments/assets/f4d7861b-d51e-46ab-ba13-7d190690b32c
 
