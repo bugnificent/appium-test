@@ -17,13 +17,13 @@ public class DatePickerStepDefs extends DatePage {
 
             waitForVisibilityAndClick(monthButton, 10);
 
-            refreshAndWaitForVisibilityOfListElement(listOfMonthElement, 10);
+            WaitForVisibility(listOfMonthElement, 10);
 
             selectMonth(month);
 
             waitForVisibilityAndClick(dayButton, 10);
 
-            refreshAndWaitForVisibilityOfListElement(listOfDaysElement, 10);
+            WaitForVisibility(listOfDaysElement, 10);
 
             selectDayWithScrollAndVerify(month, "20");
 

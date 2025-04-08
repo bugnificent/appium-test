@@ -11,23 +11,14 @@
         return element;
     }
 
-       /**
-     * Waits for any element in the list to be visible
+    /**
+     * Waits for element matching the locator to be visible on the page
      *
-     * @param elements list of web elements
-     * @param timeout timeout in seconds
+     * @param locator
+     * @param time
+     * @return
      */
-    public static void refreshAndWaitForVisibilityOfListElement(List<WebElement> elements, int timeout) {
-        int attempts = 0;
-        while (attempts < 3) {
-            try {
-                new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout))
-                        .until(driver -> elements.stream().anyMatch(WebElement::isDisplayed));
-                return;
-            } catch (StaleElementReferenceException e) {
-                Driver.getDriver().navigate().refresh();
-                attempts++;
-            }
-        }
-        throw new StaleElementReferenceException("Element still stale after 3 refresh attempts");
+    public static WebElement waitForVisibility(By locator, int time) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
