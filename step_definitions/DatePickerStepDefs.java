@@ -30,6 +30,8 @@ public class DatePickerStepDefs extends DatePage {
             waitForVisibilityAndClick(learnMoreButton, 10);
 
             waitForVisibilityAndClick(okButton, 10);
+            
+            waitForVisibilityAndClick(turnLandingPage, 10);
 
         } catch (Throwable e) {
             throw new RuntimeException("Issue occurred on Date Picker: " + e.getMessage());
