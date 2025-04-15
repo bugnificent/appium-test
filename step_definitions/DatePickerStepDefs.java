@@ -7,7 +7,7 @@ import static com.velespit.utilities.BrowserUtils.*;
 
 public class DatePickerStepDefs extends DatePage {
 
-    private final String month = "September";
+    private static final String month = "September";
 
     @Test
     public void datePickTest() {
