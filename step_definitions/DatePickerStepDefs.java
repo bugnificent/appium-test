@@ -17,13 +17,13 @@ public class DatePickerStepDefs extends DatePage {
 
             waitForVisibilityAndClick(monthButton, 10);
 
-            WaitForVisibility(AppiumBy.id("android:id/text1"), 10);
+            WaitForVisibility(monthButtonBy, 10);
 
             selectMonth(month);
 
             waitForVisibilityAndClick(dayButton, 10);
 
-            WaitForVisibility(AppiumBy.id("android:id/text1"), 10);
+            WaitForVisibility(monthButtonBy, 10);
 
             selectDayWithScrollAndVerify(month, "20");
 
